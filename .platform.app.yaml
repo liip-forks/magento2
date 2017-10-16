@@ -73,12 +73,12 @@ mounts:
 hooks:
     # We run build hooks before your application has been packaged.
     build: |
-        php ./bin/magento platformsh:build
-#        php ./vendor/platformsh/magento2-configuration/magento-build.php
+        php ./vendor/platformsh/magento2-configuration/magento-build.php
+#        php ./bin/magento platformsh:build
     # We run deploy hook after your application has been deployed and started.
     deploy: |
-        php ./bin/magento platformsh:deploy
-#        php ./vendor/platformsh/magento2-configuration/magento-deploy.php
+        php ./vendor/platformsh/magento2-configuration/magento-deploy.php
+#        php ./bin/magento platformsh:deploy
 
 # Default Magento 2 cron jobs
 crons:

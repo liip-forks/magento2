@@ -74,7 +74,8 @@
         "ext-pdo_mysql": "*",
         "ext-soap": "*",
         "sjparkinson/static-review": "~4.1",
-        "ramsey/uuid": "3.6.1"
+        "ramsey/uuid": "3.6.1",
+        "platformsh/magento2-configuration": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
@@ -256,5 +257,8 @@
             "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
         }
     },
+    "repositories": [
+        { "type": "git", "url": "git@github.com:liip-forks/platformsh-magento2-configuration.git" }
+    ],
     "prefer-stable": true
 }
