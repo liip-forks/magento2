@@ -74,7 +74,6 @@ mounts:
 hooks:
     build: |
         php ./vendor/platformsh/magento2-configuration/magento-build.php
-        rm -f app/etc/env.php
     deploy: |
         php ./vendor/platformsh/magento2-configuration/magento-deploy.php
 
@@ -82,4 +81,4 @@ hooks:
 crons:
     cronrun:
         spec: "*/5 * * * *"
-        cmd: "php bin/magento cron:run"
+        cmd: "php bin/magento setup:cron:run"
