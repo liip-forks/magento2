@@ -72,10 +72,9 @@ mounts:
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
-    # We run build hooks before your application has been packaged.
     build: |
         php ./vendor/platformsh/magento2-configuration/magento-build.php
-    # We run deploy hook after your application has been deployed and started.
+        rm -f app/etc/env.php
     deploy: |
         php ./vendor/platformsh/magento2-configuration/magento-deploy.php
 
