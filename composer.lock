@@ -1114,7 +1114,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:liip-forks/platformsh-magento2-configuration.git",
-                "reference": "656637055a221177e398ba50ce03c077fcef4b81"
+                "reference": "5b9cb90a247b2a7ce12ee08e6dc3f1d8adf802d0"
             },
             "require": {
                 "php": ">=5.6.0"
@@ -1132,7 +1132,7 @@
                 }
             ],
             "description": "Provides configuration to deploy a Magento 2 project on Platform.sh",
-            "time": "2017-10-17 13:09:25"
+            "time": "2017-10-17 13:21:20"
         },
         {
             "name": "psr/container",
