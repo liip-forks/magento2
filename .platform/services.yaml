@@ -10,3 +10,6 @@ mysql:
 redis:
     type: redis-persistent:3.0
     disk: 1024
+
+memcached:
+    type: memcached:1.4

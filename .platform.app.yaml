@@ -17,6 +17,7 @@ runtime:
         - redis
         - xsl
         - json
+        - memcached
 
 # The relationships of the application with services or other applications.
 # The left-hand side is the name of the relationship as it will be exposed
@@ -25,6 +26,7 @@ runtime:
 relationships:
     database: "mysql:mysql"
     redis: "redis:redis"
+    cache: "memcached:memcached"
 
 # The configuration of app when it is exposed to the web.
 web:
